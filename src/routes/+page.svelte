@@ -7,6 +7,7 @@
 	export let data: PageData;
 
 	$: courses = data.courses || [];
+	$: projects = data.projects || [];
 </script>
 
 <!-- Headline -->

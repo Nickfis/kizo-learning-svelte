@@ -23,3 +23,26 @@ export interface SanityCourse {
 	discountedPrice: number;
 	originalPrice: number;
 }
+
+export interface SanityProject {
+	_id: string;
+	name: string;
+	videoLink: string;
+	sourceCode?: string;
+	thumbnail: {
+		_type: 'image';
+		asset: {
+			_ref: string;
+		};
+	};
+	releaseDate: Date;
+}
+
+export interface Project {
+	_id: string;
+	name: string;
+	videoLink: string;
+	sourceCode?: string;
+	thumbnail: string;
+	releaseDate: Date;
+}

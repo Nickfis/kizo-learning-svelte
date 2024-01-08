@@ -1,6 +1,6 @@
 import { createClient, type ClientConfig } from '@sanity/client';
 import imageUrlBuilder from '@sanity/image-url';
-import type { Course, SanityCourse, SanityProject, Project } from '$lib/types';
+import type { Course, SanityCourse } from '$lib/types';
 
 const config: ClientConfig = {
 	projectId: '3s0ittln',
@@ -19,14 +19,5 @@ export function processCourseData(course: SanityCourse): Course {
 		...course,
 		thumbnail: thumbnailUrl.url(),
 		linkWithPromoCode: `${course.link}?couponCode=${course.code}`
-	};
-}
-
-export function processProjectData(project: SanityProject): Project {
-	const builder = imageUrlBuilder(sanityClient);
-	const thumbnailUrl = builder.image(project.thumbnail);
-	return {
-		...project,
-		thumbnail: thumbnailUrl.url()
 	};
 }
