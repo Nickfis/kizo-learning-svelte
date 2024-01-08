@@ -13,7 +13,7 @@
 			>
 		</li>
 		<li class="ml-4 sm:ml-14">
-			<a href="/projects" class="text-gray-900 hover:text-pink-600 sm:text-xl text-lg">Projects</a>
+			<a href="/#projects" class="text-gray-900 hover:text-pink-600 sm:text-xl text-lg">Projects</a>
 		</li>
 	</ul>
 </nav>

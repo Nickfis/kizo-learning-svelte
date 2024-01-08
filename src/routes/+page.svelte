@@ -1,6 +1,7 @@
 <script lang="ts">
 	import profilePicture from '$assets/profile-picture.jpeg';
 	import courseThumbnail from '$assets/course_thumbnail.jpeg';
+	import youtubeThumbnail from '$assets/youtube_thumbnail.jpeg';
 </script>
 
 <!-- Headline -->
@@ -41,7 +42,7 @@
 </div>
 
 <!-- Headline -->
-<div class="mx-16 mt-16">
+<div class="mx-16 mt-24">
 	<h2 id="promotions" class="font-bold text-3xl mb-2">Promotions</h2>
 	<div class="w-16 h-1 bg-pink-600 mb-6" />
 </div>
@@ -60,6 +61,27 @@
 				<p class="text-xl mr-2 font-bold">Discounted Price</p>
 				<p class="text-lg text-gray-700 line-through">Original Price</p>
 			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Headline -->
+<div class="mx-16 mt-24">
+	<h2 id="projects" class="font-bold text-3xl mb-2">Projects</h2>
+	<div class="w-16 h-1 bg-pink-600 mb-6" />
+</div>
+
+<!-- Projects container -->
+<div class="m-auto flex flex-col items-center px-16 mb-12 space-y-4 md:space-y-0 w-2/3 mb-12">
+	<!-- Project Card -->
+	<div class="flex border-b border-gray-300 items-center justify-center">
+		<img src={youtubeThumbnail} alt="YouTube Thumbnail" class="w-1/2" />
+		<div class="p-8">
+			<h3 class="text-2xl mb-12 font-semibold">
+				Building a Bookshelf Scanner with AI in 36 Hours!
+			</h3>
+			<p class="text-xl font-semibold text-pink-600">Check out the video</p>
+			<p class="text-xl mr-2 font-bold">Source Code</p>
 		</div>
 	</div>
 </div>
