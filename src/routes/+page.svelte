@@ -1,7 +1,12 @@
 <script lang="ts">
+	import type { PageData } from './$types';
 	import profilePicture from '$assets/profile-picture.jpeg';
 	import courseThumbnail from '$assets/course_thumbnail.jpeg';
 	import youtubeThumbnail from '$assets/youtube_thumbnail.jpeg';
+
+	export let data: PageData;
+
+	$: courses = data.courses;
 </script>
 
 <!-- Headline -->
