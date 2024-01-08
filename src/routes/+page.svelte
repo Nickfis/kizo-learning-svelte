@@ -1,12 +1,12 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import profilePicture from '$assets/profile-picture.jpeg';
-	import courseThumbnail from '$assets/course_thumbnail.jpeg';
 	import youtubeThumbnail from '$assets/youtube_thumbnail.jpeg';
+	import PromotionCard from '$components/PromotionCard.svelte';
 
 	export let data: PageData;
 
-	$: courses = data.courses;
+	$: courses = data.courses || [];
 </script>
 
 <!-- Headline -->
@@ -54,20 +54,9 @@
 
 <!-- Promotion Voucher Container -->
 <div class="m-auto flex flex-col items-center px-16 mb-12 space-y-4 md:space-y-0 w-2/3 mb-12">
-	<!-- Promotion Card -->
-	<div class="flex border-b border-gray-300 items-center justify-center">
-		<img src={courseThumbnail} alt="Course Thumbnail" class="w-1/2" />
-		<div class="p-8">
-			<h3 class="text-2xl mb-12 font-semibold">
-				The Freelance Stack: Real project with NextJS13 and Strapi
-			</h3>
-			<p class="text-xl font-semibold text-pink-600">Voucher Code:</p>
-			<div class="flex">
-				<p class="text-xl mr-2 font-bold">Discounted Price</p>
-				<p class="text-lg text-gray-700 line-through">Original Price</p>
-			</div>
-		</div>
-	</div>
+	{#each courses as course}
+		<PromotionCard item={course} />
+	{/each}
 </div>
 
 <!-- Headline -->
