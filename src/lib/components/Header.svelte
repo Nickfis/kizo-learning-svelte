@@ -8,7 +8,7 @@
 	</a>
 	<ul class="flex items-center sm:mr-8">
 		<li>
-			<a href="/promotions" class="text-gray-900 hover:text-pink-600 sm:text-xl text-lg"
+			<a href="/#promotions" class="text-gray-900 hover:text-pink-600 sm:text-xl text-lg"
 				>Promotions</a
 			>
 		</li>

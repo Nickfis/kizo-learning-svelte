@@ -4,13 +4,13 @@
 	import twitterLogo from '$assets/twitter.png';
 </script>
 
-<footer class="bg-black px-7 sm:px-12 py-6 shadow-inner text-white">
+<footer class="bg-black px-7 mt-32 sm:px-12 py-6 shadow-inner text-white">
 	<div class="flex-col justify-between items-center">
 		<div class="flex flex-row justify-between items-center">
 			<img src={logo} alt="" class="h-8 sm:h-12 mr-4 sm:mr-12 md:mr-24" />
 			<div
 				class="flex flex-grow ml-4 sm:mr-4 sm:ml-8 md:ml-24 md:mr-28 lg:ml-64 lg:mr-32 justify-evenly items-center space-x-4 mr-12
-				text-base sm:text-xl md:text-2xl lg:text-3xl"
+				text-base sm:text-xl md:text-2xl"
 			>
 				<a href="/#promotions" class="hover:text-pink-600">Promotions</a>
 				<a href="/data" class="hover:text-pink-600">Projects</a>
