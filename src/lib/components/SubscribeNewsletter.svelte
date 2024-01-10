@@ -24,13 +24,13 @@
 </script>
 
 <div
-	class="flex mx-16 px-6 py-4 rounded-lg justify-between bg-gray-100 mt-12 lg:w-3/4 lg:m-auto xl:w-2/3"
+	class="flex flex-col sm:flex-row mx-16 px-6 py-4 rounded-lg justify-between bg-gray-100 mt-12 lg:w-3/4 lg:m-auto xl:w-2/3"
 >
 	{#if !hasSubscribed}
 		{#if errorMessage}
 			<h3 class="text-xl font-bold">{errorMessage}</h3>
 		{:else}
-			<div class="mr-32">
+			<div class="sm:mr-8 lg:mr-32">
 				<h3 class="text-xl font-bold mb-2">Subscribe to our newsletter</h3>
 				<p>
 					You'll only receive important updates when new courses are launched or any promotions are
@@ -38,16 +38,19 @@
 				</p>
 			</div>
 			<div class="flex flex-col justify-center">
-				<form class="mt-4 flex items-center" on:submit={submitNewsletter}>
+				<form class="mt-4 flex flex-col md:flex-row items-center" on:submit={submitNewsletter}>
 					<!-- give input more space for longer emails -->
 					<input
 						type="text"
 						bind:value={email}
 						on:input={() => (isEmailValid = true)}
 						placeholder="Email"
-						class="px-4 py-3 border border-gray-300 rounded-l-md {!isEmailValid && 'bg-red-300'}"
+						class="px-4 py-3 border border-gray-300 rounded-md md:rounded-l-md {!isEmailValid &&
+							'bg-red-300'} mb-1 md:mb-0 w-full sm:w-64 lg:w-[209px]"
 					/>
-					<button type="submit" class="bg-pink-600 text-white px-4 py-3 rounded-r-md"
+					<button
+						type="submit"
+						class="bg-pink-600 w-full text-white px-4 py-3 rounded-md md:rounded-r-md"
 						>Subscribe</button
 					>
 				</form>

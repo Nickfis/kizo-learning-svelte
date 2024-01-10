@@ -13,9 +13,9 @@
 
 <Headline title="Mission" marginTop={'mt-16'} />
 <div
-	class="m-auto flex flex-col md:flex-row items-center md:justify-between px-16 mb-12 space-y-4 md:space-y-0 w-2/3 border-gray-300"
+	class="m-auto flex flex-col md:flex-row items-center md:justify-between px-16 mb-12 space-y-4 md:space-y-0 lg:w-2/3 border-gray-300"
 >
-	<div class="md:w-2/3">
+	<div class="md:mr-12 md:w-2/3">
 		<h1 class="leading-normal lg:leading-relaxed text-2xl">
 			My goal is to make you <span class="font-bold">learn by doing</span>. In my courses you'll see
 			<span class="font-bold">proven tools</span> that work in production, things I learned by
@@ -29,14 +29,18 @@
 <SubscribeNewsletter />
 
 <Headline title="Promotions" id="promotions" />
-<div class="m-auto flex flex-col items-center px-16 mb-12 space-y-4 md:space-y-0 w-2/3 mb-12">
+<div
+	class="m-auto px-16 md:px-0 flex flex-col items-center mb-12 space-y-4 md:space-y-0 md:w-[70%] lg:w-2/3 mb-12"
+>
 	{#each courses as course}
 		<PromotionCard item={course} />
 	{/each}
 </div>
 
 <Headline title="Projects" id="projects" />
-<div class="m-auto flex flex-col items-center px-16 mb-12 space-y-4 md:space-y-0 w-2/3 mb-12">
+<div
+	class="m-auto px-16 md:px-0 flex flex-col items-center mb-12 space-y-4 md:space-y-0 md:w-[70%] lg:w-2/3 mb-12"
+>
 	{#each projects as project}
 		<ProjectCard {project} />
 	{/each}
