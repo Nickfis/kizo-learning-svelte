@@ -18,6 +18,7 @@
 		content="Page to find current promotions, coupons and vouchers for all udemy courses created by Niklas Fischer."
 	/>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="google-site-verification" content="s1__Ew0K_CYpD78elxwGcGPd8JMxtHqqGRRY1BybETk" />
 </svelte:head>
 <Headline title="Mission" marginTop={'mt-16'} />
 <div
