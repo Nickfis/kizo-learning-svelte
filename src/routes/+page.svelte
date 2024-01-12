@@ -30,7 +30,7 @@
 
 <Headline title="Promotions" id="promotions" />
 <div
-	class="m-auto px-16 md:px-0 flex flex-col items-center mb-12 space-y-4 md:space-y-0 md:w-[70%] lg:w-2/3 mb-12"
+	class="m-auto px-16 md:px-0 flex flex-col items-center mb-12 space-y-4 md:space-y-0 md:w-[70%] lg:w-2/3"
 >
 	{#each courses as course}
 		<PromotionCard item={course} />
@@ -39,7 +39,7 @@
 
 <Headline title="Projects" id="projects" />
 <div
-	class="m-auto px-16 md:px-0 flex flex-col items-center mb-12 space-y-4 md:space-y-0 md:w-[70%] lg:w-2/3 mb-12"
+	class="m-auto px-16 md:px-0 flex flex-col items-center mb-12 space-y-4 md:space-y-0 md:w-[70%] lg:w-2/3"
 >
 	{#each projects as project}
 		<ProjectCard {project} />
