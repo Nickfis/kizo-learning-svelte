@@ -11,6 +11,14 @@
 	$: projects = data.projects || [];
 </script>
 
+<svelte:head>
+	<title>KIZO Learning | Promotions & Projects</title>
+	<meta
+		name="description"
+		content="Page to find current promotions, coupons and vouchers for all udemy courses created by Niklas Fischer."
+	/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</svelte:head>
 <Headline title="Mission" marginTop={'mt-16'} />
 <div
 	class="m-auto flex flex-col md:flex-row items-center md:justify-between px-16 mb-12 space-y-4 md:space-y-0 lg:w-2/3 border-gray-300"
