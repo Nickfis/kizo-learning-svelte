@@ -46,7 +46,7 @@
 		<p class="mt-2 text-gray-700">
 			Use this link to get the course for $9.99:
 			<a
-				href="https://www.udemy.com/course/practical-sveltekit-guide-build-and-deploy-real-world-apps/?couponCode=SVELTE-YOUTUBE"
+				href="https://www.udemy.com/course/practical-sveltekit-guide-build-and-deploy-real-world-apps/?couponCode=SVELTE-REDDIT-FEB"
 				class="block text-blue-600 underline"
 				>Master Svelte 5 & SvelteKit – Build & Deploy Real-World Apps</a
 			>
